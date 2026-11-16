@@ -8,17 +8,17 @@
 ### 1. Electricity Consumption Overview
 Track average and peak power, anomaly counts, daily consumption trends, and hourly usage patterns.
 
-![EnergyWatch AI — Consumption Overview](screenshots/D1.png)
+![EnergyWatch AI — Consumption Overview](D1.png)
 
 ### 2. Anomaly Intelligence
 Explore statistical risk distribution, anomalies by hour of day, and the highest-scoring unusual readings.
 
-![EnergyWatch AI — Anomaly Intelligence](screenshots/D2.png)
+![EnergyWatch AI — Anomaly Intelligence](D2.png)
 
 ### 3. Smart Energy Recommendations
 Review prioritized energy observations, filter by risk, and identify high-power, overnight, and high-current usage patterns.
 
-![EnergyWatch AI — Recommendations](screenshots/D3.png)
+![EnergyWatch AI — Recommendations](D3.png)
 
 ## ✨ Key Features
 
