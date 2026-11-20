@@ -23,6 +23,7 @@ Analyze unusual electricity readings using Isolation Forest, risk-level distribu
 
 ![EnergyLens Anomaly Intelligence](D2.png)
 
+
 ### 💡 03 — Energy Recommendations
 Explore prioritized energy observations, rule-based investigation suggestions, and consumption indicators.
 
