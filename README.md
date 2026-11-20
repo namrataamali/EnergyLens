@@ -8,25 +8,30 @@ Built with **Python, Isolation Forest, Streamlit, and Plotly**.
 
 ---
 
+
 ## 📸 Dashboard Preview
 
-### 1. Electricity Consumption Overview
+Explore the four interactive modules of EnergyLens.
 
-Track average and peak power, anomaly counts, daily consumption trends, and hourly usage patterns.
+### ⚡ 01 — Energy Consumption Overview
+Monitor electricity usage patterns, key performance indicators, and unusual consumption events.
 
-![EnergyLens — Consumption Overview](D1.png)
+![EnergyLens Overview](D1.png)
 
-### 2. Anomaly Intelligence
+### 🔍 02 — Anomaly Intelligence
+Analyze unusual electricity readings using Isolation Forest, risk-level distributions, and hourly anomaly patterns.
 
-Explore statistical risk distribution, anomalies by hour of day, and the highest-scoring unusual readings.
+![EnergyLens Anomaly Intelligence](D2.png)
 
-![EnergyLens — Anomaly Intelligence](D2.png)
+### 💡 03 — Energy Recommendations
+Explore prioritized energy observations, rule-based investigation suggestions, and consumption indicators.
 
-### 3. Smart Energy Recommendations
+![EnergyLens Recommendations](D3.png)
 
-Review prioritized energy observations, filter by risk, and identify high-power, overnight, and high-current usage patterns.
+### 📊 04 — Data Explorer
+Inspect electricity measurements, anomaly scores, risk classifications, and downloadable analytical records.
 
-![EnergyLens — Recommendations](D3.png)
+![EnergyLens Data Explorer](D4.png)
 
 ---
 
