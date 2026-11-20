@@ -7,7 +7,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
 
-st.set_page_config(page_title='EnergyWatch AI', page_icon='⚡', layout='wide', initial_sidebar_state='expanded')
+st.set_page_config(page_title='EnergyLens', page_icon='⚡', layout='wide', initial_sidebar_state='expanded')
 FEATURES = ['Global_active_power','Global_reactive_power','Voltage','Global_intensity','Sub_metering_1','Sub_metering_2','Sub_metering_3']
 COLORS = {'Low':'#24c7a4','Medium':'#f6b85b','High':'#ff647c'}
 
@@ -92,7 +92,7 @@ def chart_style(fig,height=350):
     return fig
 
 with st.sidebar:
-    st.markdown('## ⚡ EnergyWatch AI')
+    st.markdown('## ⚡ EnergyLens')
     st.caption('SMART ENERGY INTELLIGENCE')
     st.divider()
     page=st.radio('WORKSPACE',['Overview','Anomaly Intelligence','Recommendations','Data Explorer'],label_visibility='visible')
@@ -121,7 +121,7 @@ except Exception as exc:
     st.error(f'Unable to process CSV: {exc}')
     st.stop()
 
-st.markdown('<div class="hero"><div class="eyebrow">ENERGY INTELLIGENCE / LIVE ANALYSIS</div><h1>⚡ EnergyWatch AI</h1><p>Explore electricity patterns, surface unusual readings, and prioritize follow-up actions.</p></div>',unsafe_allow_html=True)
+st.markdown('<div class="hero"><div class="eyebrow">ENERGY INTELLIGENCE / LIVE ANALYSIS</div><h1>⚡ EnergyLens</h1><p>Explore electricity patterns, surface unusual readings, and prioritize follow-up actions.</p></div>',unsafe_allow_html=True)
 if uploaded is not None and model is None:
     st.warning('No model file found. Uploaded data can only be viewed if it already contains Anomaly and Risk_Level columns.')
 if aggregated:
@@ -209,5 +209,5 @@ else:
     st.caption('Datetime (or Date + Time), Global_active_power, Global_reactive_power, Voltage, Global_intensity, Sub_metering_1, Sub_metering_2, Sub_metering_3. The model file must be present to score new readings.')
 
 csv=view.drop(columns=['Hour','Day']).to_csv(index=False).encode('utf-8')
-st.download_button('⬇ Download analyzed CSV',csv,'energywatch_analyzed_report.csv','text/csv',use_container_width=True)
+st.download_button('⬇ Download analyzed CSV',csv,'energylens_analyzed_report.csv','text/csv',use_container_width=True)
 st.caption('Dataset context: UCI Individual Household Electric Power Consumption (France, 2006–2010). Average active power is in kW; do not interpret it as measured energy in kWh. This app is an exploratory analytics demonstration.')
